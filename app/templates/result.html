@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+     
+{% if customer_data and show_table %}
+
+    <h2 class="fieldsform" style="margin-right:auto;margin-left:auto;margin-top:0.6rem;margin-bottom:0.3rem;align-items: center;color:#e1e1e2;">Resultados del análisis</h2>
+    <div class="formclss" style="margin:auto;">
+        <table style="width:100%;">
+            <thead>
+                <tr style="font-size: 1.1em;
+                font-weight: 600;">
+                    <th>Parámetros Iniciales</th>
+                    <th>Valores</th>
+                
+                </tr>
+                
+            </thead>
+        
+            <tbody>
+                
+                <tr>
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Recency</td>
+                    <td>{{ customer_data[-1].input_values.recency }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Frequency</td>
+                    <td>{{ customer_data[-1].input_values.frequency }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Monetary Value</td>
+                    <td>{{ customer_data[-1].input_values.monetary_value }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="formclss" style="margin-top: 1.5rem;margin-inline: auto;">
+        <table style="width:100%;">
+            <thead>
+                <tr style="font-size: 1.1em;
+                font-weight: 600;">
+                    <th>Parámetros</th>
+                    <th>Predicciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Cluster Id</td>
+                    <td style="text-align: center;">{{ customer_data[-1].cluster_id }}</td>
+                </tr> 
+                <tr>
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Nombre</td>
+                    <td>{{ customer_data[-1].cluster_label }}</td>    
+                </tr>    
+                <tr>  
+                    <td style="font-size: 1em;
+                    font-weight: 600;">Sugerencias</td>
+                    <td>{{ customer_data[-1].suggestions }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+{% endif %}
+{% endblock %}
