@@ -2,8 +2,6 @@
 
 Desarrollo de un proyecto de Data Science end-to-end en el que se segmentan a clientes basándose en los parámetros **RFM**.
 
-Actualmente se encuentra disponible en [https://customersegmentation.pythonanywhere.com/](https://customersegmentation.pythonanywhere.com/)
-
 La segmentación de clientes es el proceso mediante el cual se agrupan los clientes en base a su comportamiento, características y necesidades. Esto ayuda a las empresas de muchas maneras en el lanzamiento de un producto, destacando las propiedades del mismo, adaptándolas a cada grupo de consumidores. Además pueden apuntar a una audiencia específica a partir de su comportamiento. Todo lo anterior influye de forma directa en el valor de mercado de la empresa.
 
 Algunas de las formas más comunes de segmentar a los usuarios son:
@@ -13,6 +11,10 @@ Algunas de las formas más comunes de segmentar a los usuarios son:
 * Comportamiento: Ejemplos -> hábitos, acciones frecuentes y uso de productos.
 
 Para un gerente de marketing directo resulta sumamente útil utilizar un sistema de inteligencia empresarial para informar sobre sus clientes. Al definir con precisión a sus mejores clientes basándose en parámetros como la Recency, Frecuency y Monetary Value (RFM), puede maximizar el retorno de la inversión en sus acciones de marketing. Un cliente que ordena con frecuencia, lo ha hecho recientemente y ha gastado una suma significativa de dinero es más probable que lo haga en el futuro que otros clientes.
+
+El entrenamiento del modelo de Machine Learning, los datos con los que fue entrenado y el preprocesamiento de los mismos fueron obtenidos a partir de los resultados de un concurso organizado por [Natasquad](https://www.natasquad.com/), en el problema de Customer Segmentation. La forma de obtenerlos y el procedimiento se encuentra detallado en el [repositorio](https://github.com/Ferricty/NataSquad-AI-Hackathon/tree/main/3_Customer_Segmentation)
+
+Actualmente se encuentra disponible en [https://customersegmentation.pythonanywhere.com/](https://customersegmentation.pythonanywhere.com/)
 
 ## API Endpoint
 ```
