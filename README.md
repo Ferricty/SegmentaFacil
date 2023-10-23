@@ -31,6 +31,7 @@ https://customersegmentation.pythonanywhere.com/api/cluster?recency={recency}&fr
 https://customersegmentation.pythonanywhere.com/api/cluster?recency=64&frequency=32&monetary_value=100924
 
 ## Ejemplo de respuesta
+```json
 {'clusterId': 1,
  'clusterLabel': 'En riesgo',
  'error': '',
@@ -39,3 +40,4 @@ https://customersegmentation.pythonanywhere.com/api/cluster?recency=64&frequency
                  'recency': 64},
  'message': 'Data processed successfully',
  'suggestions': 'Son clientes que compraban seguido gastando grandes cantidades, pero no han realizado compras recientemente. Se recomienda enviarles una campaña personalizada para reconectar y ofrecerles productos que puedan contribuir a que realicen otra compra.'}
+```
