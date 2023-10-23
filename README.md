@@ -25,10 +25,14 @@ https://customersegmentation.pythonanywhere.com/api/cluster
 * Todos los valores a introducir tienen que ser mayores que 0.
 
 ## Estructura de la URL
+```
 https://customersegmentation.pythonanywhere.com/api/cluster?recency={recency}&frequency={frequency}&monetary_value={monetary_value}
+```
 
 ## Ejemplo
+```
 https://customersegmentation.pythonanywhere.com/api/cluster?recency=64&frequency=32&monetary_value=100924
+```
 
 ## Ejemplo de respuesta
 ```javascript
