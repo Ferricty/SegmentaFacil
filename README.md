@@ -21,9 +21,11 @@ URL-Params: int: recency int: frequency float: monetary_value
 Todos los valores a introducir tienen que ser mayores que 0.
 Estructura de la URL
 https://customersegmentation.pythonanywhere.com/api/cluster?recency={recency}&frequency={frequency}&monetary_value={monetary_value}
-Ejemplo
+
+## Ejemplo
 https://customersegmentation.pythonanywhere.com/api/cluster?recency=64&frequency=32&monetary_value=100924
-Ejemplo de respuesta
+
+## Ejemplo de respuesta
 {'clusterId': 1,
  'clusterLabel': 'En riesgo',
  'error': '',
