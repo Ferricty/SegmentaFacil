@@ -31,7 +31,7 @@ https://customersegmentation.pythonanywhere.com/api/cluster?recency={recency}&fr
 https://customersegmentation.pythonanywhere.com/api/cluster?recency=64&frequency=32&monetary_value=100924
 
 ## Ejemplo de respuesta
-```json
+```javascript
 {'clusterId': 1,
  'clusterLabel': 'En riesgo',
  'error': '',
