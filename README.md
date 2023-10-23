@@ -21,7 +21,10 @@ https://customersegmentation.pythonanywhere.com/api/cluster
 
 * Método: POST
 * Descripción: Devuelve un conjunto de métricas del clúster al que pertenece el cliente
-* URL-Params: int: recency int: frequency float: monetary_value
+* URL-Params:
+  * int: recency
+  * int: frequency
+  * float: monetary_value
 * Todos los valores a introducir tienen que ser mayores que 0.
 
 ## Estructura de la URL
